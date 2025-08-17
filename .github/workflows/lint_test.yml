@@ -1,0 +1,23 @@
+name: Lint and Test
+
+on: push
+
+jobs:
+  lint-and-test:
+  runs-on: ubuntu-latest
+  steps:
+    - users: actions/checkout@v4
+
+    - name: Set up Node
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Run ESLint
+      run: npm run lint
+
+    - name: Run Test
+      run: npm run test
