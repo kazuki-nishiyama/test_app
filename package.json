@@ -10,7 +10,7 @@
     "preview": "vite preview",
     "test": "vitest watch",
     "coverage": "vitest run --coverage",
-    "prepare": "husky install",
+    "prepare": "husky install"
   },
   "dependencies": {
     "react": "^19.1.1",
