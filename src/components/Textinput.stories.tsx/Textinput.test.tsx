@@ -1,9 +1,9 @@
 import userEvent from "@testing-library/user-event";
 import { render, screen } from "@testing-library/react";
-import { test, expect } from "vitest";   // ← vitest からインポート
-import TextInput from "./Textinput";     // ← コンポーネントのパスに合わせる
+import { test, expect } from "vitest"; // ← vitest からインポート
+import TextInput from "./Textinput"; // ← コンポーネントのパスに合わせる
 
-test("TextInput Component Test", async() => {
+test("TextInput Component Test", async () => {
   // Test implementation goes here
   const user = userEvent.setup();
   render(<TextInput />);
